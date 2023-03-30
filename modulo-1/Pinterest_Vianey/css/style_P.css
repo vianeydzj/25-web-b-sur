@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    outline: 1px solid lightgreen !important;
+    font-family: 'Roboto', sans-serif;
+  }
+  nav{
+    list-style-type: none;
+    padding: 4px;
+    margin: 16px;
+  }
+  nav li{
+    display: inline-block;
+    font-size: 16;
+    padding: 14px;
+  }
+  .logo{
+    width: 24px;
+    height: 24px;
+  }
+  .search{
+    width: 16x;
+    height: 16px;
+  }
+  .notification{
+    width: 24px;
+    height: 24px;
+  }
+  .message{
+    width: 24px;
+    height: 24px;
+  }
+  .perfile{
+    width: 24px;
+    height: 24px;
+  }
+  .chevron{
+    width: 12px; 
+    height: 12px;
+  }
