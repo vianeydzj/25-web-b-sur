@@ -1,12 +1,86 @@
 *{
     box-sizing: border-box;
-    outline: 1px solid lightgreen !important;
+    /* outline: 1px solid lightgreen !important; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
   }
   .header{
     background-color: white;
-    height: 80px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: .5px .5px 5px;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu{
+   display: flex;
+   margin-right: 30px;
+   list-style: none; 
+   width: max-content;
+  }
+  
+  .nav-menu li{
+    margin: 0 16px;
+  }
+
+  #search-img{
+    height: 30px;
+    width: 30px;
+    margin-left: 320px;
+    position: absolute;
+    top: 22px;
+  }
+  .search-input{
+    border-radius:30px ;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    width: 100%;
+    padding: 0px 46px 0 46px;
+    margin-top: 8px;
+  }
+  .nav-menu-right{
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+  }
+  .nav-menu-right i{
+    margin: 0 16px;
+    
+  }
+  .logo{
+    padding: 0 10px;
+  }
+
+  body{
+    padding: 30px 0px 0px;
+  }
+  img{
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    display: block;
+    border-radius: 10%;
+  }
+  .gallery{
+   margin: 40px; 
+   columns: 5 210px;
+   column-gap: 0.5em;
+  }
+  .gallery:hover{
+    cursor: pointer;
+  }
+
+@media (max-width: 768px){
+  .header{
+    background-color: white;
+    height: 50px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,14 +101,16 @@
     margin: 0 16px;
   }
   .search-input{
+    display: none;
     border-radius:30px ;
     background-color: rgb(243, 243, 243);
     border: none;
     font-size: 16px;
     font-weight: normal;
-    height: 100%;
+    height: 40px;
     width: 100%;
-    padding: 14px 46px;
+    padding: 0px 46px 0 46px;
+    margin-top: 8px;
   }
   .nav-menu-right{
     display: flex;
@@ -47,8 +123,6 @@
   .logo{
     padding: 0 10px;
   }
- 
-  
 
   body{
     padding: 30px 0px 0px;
@@ -61,6 +135,8 @@
   }
   .gallery{
    margin: 40px; 
-   columns: 5 210px;
+   columns: 2 110px;
    column-gap: 0.5em;
   }
+  
+}
