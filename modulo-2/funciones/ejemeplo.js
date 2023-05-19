@@ -15,7 +15,7 @@ function SunaDosNumeros(primerNumero, SegundoNumero) {
     let resultadoDeLaSumaDeDosNumeros = primerNumero + SegundoNumero;
     //return resultadoDeLaSumaDeDosNumeros;
 
-    // OTRA FOME DE HACERLO MAS DIRECTO
+    // OTRA FORMA DE HACERLO MAS DIRECTO
     return primerNumero + SegundoNumero;
     
 }
