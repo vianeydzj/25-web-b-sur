@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="./css/estilos.css">
    
 </head>
-<header class="header">
-    <nav class="nav">
-        <ul class="nav-menu">
-            <i>DEV.F Banco</i>
-            <a href="./index.html">Salir</a>
+<header>
+    <div id="menu">
+        <ul>
+            <li><a href="">DEV.F Banco</a></li>
+            <li class="item-r"><a href="./index.html">Salir</a></li>
         </ul>
-    </nav>
+    </div>
 </header>
 <body>
-    <h1 class="nombre">Bienvendo</h1>
-
-    <h2>¿Qué desea realizar?</h2>
+    <h1 class="nombre">Bienvenido</h1>
+     <div class="cons">
+        <h2>¿Qué desea realizar?</h2>
     
     <h3>Consultar Saldo</h3>
-    <a href="" onclick="ConsultarMonto()">Consultar</a>
+    <a class="a-button" href="" onclick="consultarMonto()">Consultar</a>
     
-    <h3>Ingresar Monto</h3>
-    <input id="ingresarMonto" type="number">
-    <button id="Ingresar">Ingresar Monto</button>
-    
-    <h3>Retirar Monto</h3>
-    <input id= "RetirarMonto" type="number">
-    <button id="Retirar">Retirar Monto</button>
+    <div class="actions">
+        <h3>Ingresar Monto</h3>
+        <input type="number" required>
+       <button onclick="ingresarMonto()">Ingresar Monto</button>
+        
+        <h3>Retirar Monto</h3>
+        <input type="number" required>
+        <button onclick="retirarMonto()">Retirar Monto</button>
 
+    </div>
+     </div>
+    
 
 
     <script src="./js/index.js"></script>
