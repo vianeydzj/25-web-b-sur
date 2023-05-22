@@ -13,16 +13,16 @@
 <body>
     <div class="formulario">
         <h1>Inicio de sesión</h1> 
-        <form method="post">
+        <form action=" ">
             <div class="datos">
                 <input id="nombre" type="text" required>
-                <label for="nombre">Nombre de usuario</label>
+                <label>Nombre de usuario</label>
             </div>
         <div class="datos">
             <input id="password" type="password" required>
-            <label for="password">Contraseña</label>
+            <label>Contraseña</label>
         </div>
-        <div><button id="boton">Iniciar</button></div>
+        <div><button id="boton" onclick="login()">Iniciar</button></div>
         <!-- <div><input type="submit" value="Iniciar" onclick="login()"></div> -->
     </div>
     <script src="./js/index.js"></script>
