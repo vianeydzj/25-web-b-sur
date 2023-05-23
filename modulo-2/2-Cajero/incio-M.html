@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Mauli</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+   
+</head>
+<header>
+    <div id="menu">
+        <ul>
+            <li><a href="">DEV.F Banco</a></li>
+            <li class="item-r"><a href="./index.html">Salir</a></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <div class="cons">
+    <h1 class="nombre">Bienvenido</h1>
+        <h2>¿Qué desea realizar?</h2>
+    <h3>Consultar Saldo</h3>
+    <a id="consultaMaui" href="" onclick="consultarMontoMaui()">Consultar</a>
+</div>
+    <div class="actions">
+        <h3>Ingresar Monto</h3>
+        <input type="number" required>
+       <button onclick="ingresarMonto()">Ingresar Monto</button>
+        
+        <h3>Retirar Monto</h3>
+        <input type="number" required>
+        <button onclick="retirarMonto()">Retirar Monto</button>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
