@@ -24,25 +24,28 @@ password = document.getElementById("password").value;
 }
 }
 
+//Funciones para retirar y depositar cantidades con la condicion de que el saldo actual desde mayor a 10 y menor a 990
 function ingresarMonto() {
-    var cantidad=parseInt(document.getElementById("cant").value);
-    var cantidad1=parseInt(document.getElementById("cantI").value);
+  var cantidad=parseInt(document.getElementById("cant").value);
+  var cantidad1=parseInt(document.getElementById("cantI").value);
 
-    if (cantidad > 10 || cantidad < 990 ) {
-      alert("Saldo no valido, ingrese otra cantidad")
-    }else{
-      document.getElementById("cant").value=(cantidad+cantidad1); 
-    }  
-  }
+  if (cantidad < 990 ) {
+    document.getElementById("cant").value=(cantidad + cantidad1);
+    cantidad = cantidad;
+  }else{ 
+    alert("Saldo no valido, ingrese otra cantidad");
+   
+  }  
+}
 
-  function retirarMonto() {
-    var cantidad=parseInt(document.getElementById("cant").value);
-    var cantidad2=parseInt(document.getElementById("cantR").value);
-    if (cantidad > 10 || cantidad < 990 ) {
-      alert("Saldo no valido, ingrese otra cantidad")
-    }else{
-      document.getElementById("cant").value=(cantidad - cantidad2); 
-    }  
+function retirarMonto() {
+  var cantidad=parseInt(document.getElementById("cant").value);
+  var cantidad2=parseInt(document.getElementById("cantR").value);
+  if (cantidad > 10 ) {
+    document.getElementById("cant").value=(cantidad - cantidad2);
+  }else{ 
+    alert("Saldo no valido, ingrese otra cantidad");
+  }  
   }
 
 
