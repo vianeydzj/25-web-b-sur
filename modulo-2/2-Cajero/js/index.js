@@ -24,7 +24,8 @@ password = document.getElementById("password").value;
 }
 }
 
-//Funciones para retirar y depositar cantidades con la condicion de que el saldo actual desde mayor a 10 y menor a 990
+//Funciones para retirar y depositar cantidades con la condicion de que el saldo actual desbe ser mayor a 10 y menor a 990
+
 function ingresarMonto() {
   var cantidad=parseInt(document.getElementById("cant").value);
   var cantidad1=parseInt(document.getElementById("cantI").value);
