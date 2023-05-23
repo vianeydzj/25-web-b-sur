@@ -92,7 +92,7 @@ input[type="submit"]:hover{
 } */
 
 /* pagina inicio */
-
+/* diseño en la barra de navegación */
 #menu{
   background-color: #ffffff;
 } 
@@ -117,10 +117,24 @@ display: inline-block;
 #menu ul li a:hover{
   background-color: #3466ec;
 }
+/*Mover el boton de salida a la derecha*/
 .item-r{
   float: right;
 }
 
+/*diseño del input saldo*/
+.saldo{
+  width: 20%;
+  height: 50px;
+  border: 0px solid;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 18px;
+  color: black;
+  outline: none;
+}
+
+/* animación y diseño de los botones ingresar y retirar */
 .actions button{
   width: 15%;
   height: 50px;
@@ -137,6 +151,7 @@ display: inline-block;
   transition: .5s;
 }
 
+/*diseño del input ingresar y retirar*/
 .actions input{
   width: 20%;
   height: 50px;
@@ -148,21 +163,6 @@ display: inline-block;
   outline: none;
 }
 
-.cons a{
-  padding: 11px 16px;
-  border: 1px solid;
-  background-color: #3466ec;
-  border-radius: 25px;
-  font-size: 18px;
-  color: white;
-  outline: none;
-  text-decoration:none;
-}
-
-.cons a:hover{
-  border-color: #3466ec;
-  transition: .5s;
-}
 
 
 

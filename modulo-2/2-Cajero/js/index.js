@@ -6,7 +6,7 @@ var cuentas =[
     {nombre: "Maui",saldo: 67,password: '123'}
 ];
 
-//funcion para validar dator e ingresar a la pagina de inicio
+//funcion para validar datos e ingresar a la pagina de inicio
 function login() {
 nombre = document.getElementById("nombre").value;
 password = document.getElementById("password").value;
@@ -25,10 +25,6 @@ password = document.getElementById("password").value;
 
 }
 
-function consultarMonto() {
- if (condition) {
-    
- }
-}
+
 
 
