@@ -12,7 +12,19 @@
 </header>
 <body>
     <div class="formulario">
-        <h1>Inicio de sesión</h1> 
+        <div class="formulario">
+            <h1>Inicio de sesión</h1>
+                <div class="datos">
+                    <input id="nombre" type="text" required>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="datos">
+                    <input id="password" type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <button id="boton" onclick="login()">Iniciar</button>  
+        </div>
+        <!-- <h1>Inicio de sesión</h1> 
         <form action=" ">
             <div class="datos">
                 <input id="nombre" type="text" required>
@@ -23,8 +35,8 @@
             <label>Contraseña</label>
         </div>
         <div><button id="boton" onclick="login()">Iniciar</button></div>
-        <!-- <div><input type="submit" value="Iniciar" onclick="login()"></div> -->
-    </div>
+    </form>
+    </div> -->
     <script src="./js/index.js"></script>
 </body>
 </html>

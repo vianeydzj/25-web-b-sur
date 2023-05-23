@@ -27,7 +27,7 @@ body{
   border-bottom: 1px solid silver;
 }
 /* Estilo general de los div datos (usuario y contraseña) */
-form .datos{
+div .datos{
   position: relative;
   border-bottom: 2px solid #adadad;
   margin: 30px 0;

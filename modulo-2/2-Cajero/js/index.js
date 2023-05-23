@@ -12,12 +12,13 @@ nombre = document.getElementById("nombre").value;
 password = document.getElementById("password").value;
 
     if (nombre == "Mali" && password == 'helloworld') {      
-        window.location= "2-Cajero\inicio-Mali.html";  
+        window.location.replace("inicio-Mali.html"); 
+        
 } else if (nombre == "Gera" && password == '133t') {
-    
+    window.location.replace("inicio-Gera.html"); 
 
 } else if (nombre == "Maui" && password == '123') {
-    
+    window.location.replace("incio-Maui.html");
 }else {
      alert("Datos incorrectos");
 }
