@@ -30,7 +30,7 @@ function ingresarMonto() {
   var cantidad=parseInt(document.getElementById("cant").value);
   var cantidad1=parseInt(document.getElementById("cantI").value);
 
-  if (cantidad <= 990 ) {
+  if (cantidad + cantidad1 <= 990 ) {
     document.getElementById("cant").value=(cantidad + cantidad1);
   }else{ 
     alert("Saldo no valido, ingrese otra cantidad");
@@ -41,7 +41,7 @@ function ingresarMonto() {
 function retirarMonto() {
   var cantidad=parseInt(document.getElementById("cant").value);
   var cantidad2=parseInt(document.getElementById("cantR").value);
-  if (cantidad >= 10 ) {
+  if (cantidad - cantidad2 >= 10 ) {
     document.getElementById("cant").value=(cantidad - cantidad2);
   }else{ 
     alert("Saldo no valido, ingrese otra cantidad");
