@@ -19,18 +19,19 @@
 <body>
     <div class="cons">
     <h1 class="nombre">Bienvenido Gera</h1>
-        <h2>¿Qué desea realizar?</h2>
-    <h3>Consultar Saldo</h3>
-    <input class="saldo" type="text" id="saldoGera" value="290">
+    <h2>¿Qué desea realizar?</h2>
+    <h3>Saldo Actual</h3>
+    <input class="saldo" type="text" id="cant" value="290" >
 </div>
     <div class="actions">
         <h3>Ingresar Monto</h3>
-        <input type="number" required>
-       <button onclick="ingresarMonto()">Ingresar Monto</button>
+        <input type="number"  id="cantI" required>
+        <button onclick="ingresarMonto()">Ingresar Monto</button> 
         
         <h3>Retirar Monto</h3>
-        <input type="number" required>
+        <input id="cantR" type="number" required>
         <button onclick="retirarMonto()">Retirar Monto</button>
+
 
     </div>
     <script src="./js/index.js"></script>

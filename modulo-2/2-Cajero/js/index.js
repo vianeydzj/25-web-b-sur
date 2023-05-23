@@ -24,6 +24,26 @@ password = document.getElementById("password").value;
 }
 }
 
+function ingresarMonto() {
+    var cantidad=parseInt(document.getElementById("cant").value);
+    var cantidad1=parseInt(document.getElementById("cantI").value);
+
+    if (cantidad > 10 || cantidad < 990 ) {
+      alert("Saldo no valido, ingrese otra cantidad")
+    }else{
+      document.getElementById("cant").value=(cantidad+cantidad1); 
+    }  
+  }
+
+  function retirarMonto() {
+    var cantidad=parseInt(document.getElementById("cant").value);
+    var cantidad2=parseInt(document.getElementById("cantR").value);
+    if (cantidad > 10 || cantidad < 990 ) {
+      alert("Saldo no valido, ingrese otra cantidad")
+    }else{
+      document.getElementById("cant").value=(cantidad - cantidad2); 
+    }  
+  }
 
 
 
