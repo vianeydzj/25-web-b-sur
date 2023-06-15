@@ -1,7 +1,8 @@
 const genreList = document.querySelector('#genres-list');
 
-
+// la funcion async es para hacer un apartado que hace un lado la funcion y compila las demas funciones y lo deja al final 
 const getGenres = async () => {
+  // la fetch es para que traiga los datos de la api 
     const response = await fetch(
       "https://api.themoviedb.org/3/genre/movie/list?language=es",
       {
@@ -25,13 +26,13 @@ const getGenres = async () => {
 
 getGenres().then((response) =>
 response.genres.forEach((genre) => {
-  const genreItem = document.createElement("li");
-  const genreLink = document.createElement("a");
-  genreLink.innerText = genre.name;
-  genreLink.classList.add("dropdown-item");
-  genreLink.setAttribute("href", "#");
-  genreItem.appendChild(genreLink);
-  genreList.appendChild(genreItem);
+  const genreItem = document.createElement("li"); //creamos elemento li
+  const genreLink = document.createElement("a"); // creamos elemento elemento a
+  genreLink.innerText = genre.name; // damos un nombre al elemento 
+  genreLink.classList.add("dropdown-item"); //añadimos la clase al elemento a
+  genreLink.setAttribute("href", "#"); // agregamos el tributo href al elemento a 
+  genreItem.appendChild(genreLink); // agregamos com hijo el elemento a al elemento li (<li><a> <li><a>)
+  genreList.appendChild(genreItem); //agregamos cada elemento li como hijo del elemento ul 
 })
 );
     
