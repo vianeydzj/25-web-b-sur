@@ -21,9 +21,11 @@ const renderizarPersonajes = (listado) => {
 const getCharacters = async () => {
   const response = await fetch(
     "https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=648d8e7c24286feb92ff8f70c9aad7ab&hash=584bdc748dae00bc0c25a7c48bed9ff4",
+
   );
   return response.json();
 };
+
 
 getCharacters().then((response) => {
   allCharacters = response.data.results;
@@ -64,8 +66,8 @@ const getCharacters2 = {
     })
   }
 }
-const formulario = document.querySelector('#search')
 
+const formulario = document.querySelector('#search')
 const buscador = (search) => {
   popularBox.innerHTML = ''
   let a_minusculas = search.toLowerCase();
