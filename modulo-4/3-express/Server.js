@@ -23,6 +23,27 @@ app.get('/user/uid',(req,res) =>{
     const uid = req.params.uid
     res.send({message: `El id buscado: ${uid}`})
 })
+//haciendo una peticion utilizando variables y json
+//http://localhost:3000/search?q=gato&color=azul&vidas=9  
+app.get('/search',(req,res) =>{
+ console.log(req.query);
+ const {q,color,vidas} =req.query
+ res.send ({q,color,vidas}) 
+})
+
+app.post('/create/user',(req,res) =>{
+    console.log(req.boby);
+    const{name,email,age,is_active} = req.body 
+    res.status (201).send ({
+        id:'10',
+        name,
+        email,
+        age,
+        is_active 
+    });
+});
+
+app.get('/')
 
 app.listen(port, () =>{
     console.log(`escuchando desde el puerto ${port}`)
