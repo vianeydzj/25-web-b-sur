@@ -5,14 +5,14 @@
  */
 
 const app = require('../app');
-const debug = require('debug')('4-express-generator:server');
+const debug = require('debug')('4.-express-generator:server');
 const http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '8000');
+const port = normalizePort(process.env.PORT);
 app.set('port', port);
 
 /**
@@ -25,7 +25,9 @@ const server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+app.listen(port, () => {
+  console.log(`Server running in port ${port}`)
+})
 server.on('error', onError);
 server.on('listening', onListening);
 
