@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(10deg, #6C3483, #cedfd5);
+    height: 100vh;
+}
+
+#trivia {
+    display: none;
+}
+
+#pantallaPuntaje{
+    display: none;
+}
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /* height: 350px; */
+    background: white;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    /* border-bottom: 1px solid silver; */
+}
+
+.formulario h4 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .comboBox {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.comboBox select {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    color: #adadad;
+    border: none;
+    background: none;
+    /* outline: ; */
+}
+
+.comboBox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: black;
+    transform: translateY(-170%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+form .opcion {
+    display: flex;
+    justify-content: center;
+}
+
+.opcion button {
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 3px 5px;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #e7e7e7;
+    color: black;
+    cursor: pointer;
+    border-color: white;
+    outline: none;
+}
+
+.opcion button:hover{
+    border-color: rgb(33, 231, 19);
+    transition: .5s;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    transform: translateY(-30%);
+    background: #6C3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none
+}
+
+
+
+input[type="submit"]:hover {
+    border-color: purple;
+    transition: .5s;
+}
+
+input[type="button"] {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    background: #229505;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    opacity: 0.6;
+}
+
+input[type="button"]:hover {
+    border-color: #229505;
+    transition: .5s;
+}

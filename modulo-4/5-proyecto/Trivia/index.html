@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>QuizzyMind</title>
+</head>
+<body>
+    <div class="formulario" id="form">
+        <h1>Crear Trivia</h1>
+        <form action="">
+            <div class="comboBox">
+                <select name="dif" id="dif">
+                    <option value="easy">Facil</option>
+                    <option value="medium">Medio</option>
+                    <option value="hard">Dificil</option>
+                </select>
+                <label>Dificultad</label>
+            </div>
+            <div class="comboBox">
+                <select name="tipo" id="tipo">
+                    <option value="boolean">Verdadero o falso</option>
+                    <option value="multiple">Opcion Multiple</option>
+                </select>
+                <label>Tipo de respuesta</label>
+            </div>
+            <div class="comboBox">
+                <select name="cat" id="cat">
+                </select>
+                <label>Categoria</label>
+            </div>
+            <input type="submit" onclick="return crearTrivia();" onvalue="Crear">
+        </form>
+    </div>
+    <!-- Aquí es el apartado de las preguntas (Trivia) -->
+    <div class="formulario" id="trivia"></div>
+    <!-- Aquí es el apartado de la pantalla de puntaje -->
+    <div class="formulario" id="pantallaPuntaje"></div>
+
+
+
+    <script src="Js/app.js"></script>
+</body>
+</html>
