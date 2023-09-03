@@ -6,11 +6,8 @@ const Post = () => {
 
     return (
         <>
-        <h1>{Post.id} - {Post.title}
+        <h1>{Post.title}
         </h1>
-        <p>
-            {Post.body}
-        </p>
         </>
 
     );
@@ -19,7 +16,7 @@ const Post = () => {
 export default Post;
 
 export const loaderPost = async ({params}) => {
-    const res = await fetch (`https://jsonplaceholder.typicode.com/posts/${params.id}`
+    const res = await fetch (`https://api.escuelajs.co/api/v1/products${params.title}`
     );
 
     if(!res.ok) 
