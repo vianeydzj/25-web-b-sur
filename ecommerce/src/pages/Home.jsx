@@ -6,20 +6,32 @@ const Home = () => {
 
     return (
         <>
-        <ul>
+        <ul class="col-md-4">
             {post.length > 0 ? (
                 post.map((Home) => (
+                    
                     <li key={Home.title}>
-                        {Home.title} 
-                        {Home.price} 
-                        {Home.description}
-
+                        <a class="col-md-4">
+            <img src={Home.image} alt={Home.id} class="img-thumbnail"/>
+            <li>
+                {Home.title}
+            </li>
+        </a>
+        <li>
+        {Home.price}
+        </li>
+        <li>
+        {Home.description}
+        </li>
+                        
+                       
                     </li>
+                    
                 ))
             ) : (
                 <li>No Home found</li>
             )}
-        </ul>
+        </ul> 
         </>
         
     );
